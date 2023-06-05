@@ -1,0 +1,21 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.grid-container {
+    width: 750px; 
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+}
+  
+  .grid-container div {
+    background-color: #fff;
+    border: 1px solid #888;
+    padding-top: 100%; /* To maintain square aspect ratio */
+  }
+

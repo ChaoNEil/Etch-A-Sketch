@@ -6,3 +6,10 @@ for (let i = 0; i < 16 * 16; i++) {
     gridContainer.appendChild(cell);
 }
 
+//hover effect 
+const cells = document.querySelectorAll(".grid-container div");
+cells.forEach(cell => {
+    cell.addEventListener("mouseover", () => {
+        cell.style.backgroundColor = "black";
+    });
+});

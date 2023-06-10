@@ -2,7 +2,7 @@ const gridContainer = document.querySelector('.grid-container');
 const gridSizeInput = document.getElementById('grid-size');
 const updateGridBtn = document.getElementById('update-grid');
 
-let gridSize = 16; // Initial grid size
+let gridSize = 30; // Initial grid size
 
 // Function to generate the grid
 function generateGrid(size) {

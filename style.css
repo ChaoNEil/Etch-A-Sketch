@@ -3,6 +3,7 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-image: linear-gradient(to bottom right, black 70%,blue);
 }
 
 .container{
@@ -15,22 +16,29 @@ h1 {
   top: 40px; /* for positioning the h1 tag*/
   left: 50%; /* for positioning the h1 tag*/
   transform: translateX(-50%); /* for positioning the h1 tag*/
+  color:azure;
+  font-size: 42px;
+}
 
+p{
+  display: flex;
+  justify-content: center;
+  color:azure;
 }
 
 .grid-container {
-    width: 700px ; 
-    height: 700px;
-    border: 1px solid black;
-    display: grid;
-    grid-template-columns: repeat(16, 1fr);
-    position: relative; /* for positioning the h1 tag independently from the gird*/
+  width: 700px ; 
+  height: 700px;
+  border: 1px solid black;
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  position: relative; /* for positioning the h1 tag independently from the gird*/
     
 }
   
 .grid-container div {
-    background-color: #fff;
-    border: 1px solid #888;
+  background-color: #fff;
+  border: 1px solid #888;
 }
 
 
@@ -42,4 +50,5 @@ h1 {
 .buttons button{
   margin: 0 5px;
   margin-bottom: 7px;
+  border-radius: 9px;
 }

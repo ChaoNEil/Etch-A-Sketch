@@ -1,7 +1,9 @@
 const gridContainer = document.querySelector('.grid-container');
 const buttons = document.querySelector(".buttons");
+const colorPicker = document.getElementById("colorPicker");
 
 let gridSize = 48; // Initial grid size
+let hoverColor = "black"; //Initial hover color
 
 // Function to generate the grid
 function generateGrid(size) {
@@ -16,7 +18,7 @@ function generateGrid(size) {
   for (let i = 0; i < size * size; i++) {
     const cell = document.createElement('div');
     cell.addEventListener('mouseenter', () => {
-      cell.style.backgroundColor = 'black'; //  background color on hover
+      cell.style.backgroundColor = hoverColor; //  background color on hover
     });
     gridContainer.appendChild(cell);
   }
@@ -26,6 +28,11 @@ function generateGrid(size) {
 function handleGridSizeButtonClick(size){
   gridSize = size;
   generateGrid(gridSize);
+}
+
+//Function to handle color picker change
+function handleColorPickerChange(event) {
+  hoverColor = event.target.value;
 }
 
 //Event listeners for the size buttons
@@ -40,6 +47,9 @@ document.getElementById("size64").addEventListener("click", function() {
 document.getElementById("size100").addEventListener("click", function() {
   handleGridSizeButtonClick(100);
 });
+
+// Event listener for color picker
+colorPicker.addEventListener('change', handleColorPickerChange)
 
 // Initial grid generation
 generateGrid(gridSize);

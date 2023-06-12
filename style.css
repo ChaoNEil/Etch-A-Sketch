@@ -13,7 +13,7 @@ body{
   text-align: center;
 }
 
-h1 {
+.main-title {
   margin-top: 0;
   position:absolute; /* for positioning the h1 tag independently from the gird*/
   top: 40px; /* for positioning the h1 tag*/
@@ -57,4 +57,13 @@ p{
   margin-bottom: 7px;
   border-radius: 9px;
   border-color: blue;
+}
+
+.rgb-picker{
+  margin-bottom: -14px;
+}
+
+.colorPicker-subtext{ 
+  font-size: 14px;
+  margin-top: 3px;
 }

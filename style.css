@@ -28,12 +28,18 @@ h1 {
     
 }
   
-  .grid-container div {
+.grid-container div {
     background-color: #fff;
     border: 1px solid #888;
-  }
+}
 
-  .controls{
-    margin-bottom: 10px;
-  }
 
+.buttons{
+  display: flex;
+  justify-content: center;
+}
+
+.buttons button{
+  margin: 0 5px;
+  margin-bottom: 7px;
+}

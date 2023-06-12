@@ -1,8 +1,7 @@
 const gridContainer = document.querySelector('.grid-container');
-const gridSizeInput = document.getElementById('grid-size');
-const updateGridBtn = document.getElementById('update-grid');
+const buttons = document.querySelector(".buttons");
 
-let gridSize = 30; // Initial grid size
+let gridSize = 32; // Initial grid size
 
 // Function to generate the grid
 function generateGrid(size) {
@@ -23,18 +22,27 @@ function generateGrid(size) {
   }
 }
 
+//fucntion to handle grid size button click
+function handleGridSizeButtonClick(size){
+  gridSize = size;
+  generateGrid(gridSize);
+}
+
+//Event listeners for the size buttons
+document.getElementById("size32").addEventListener("click", function() {
+  handleGridSizeButtonClick(32);
+});
+
+document.getElementById("size64").addEventListener("click", function() {
+  handleGridSizeButtonClick(64);
+});
+
+document.getElementById("size100").addEventListener("click", function() {
+  handleGridSizeButtonClick(100);
+});
+
 // Initial grid generation
 generateGrid(gridSize);
 
-// Event listener for updating the grid
-updateGridBtn.addEventListener('click', () => {
-  const newSize = parseInt(gridSizeInput.value);
 
-  if (newSize >= 1 && newSize <= 100) {
-    gridSize = newSize;
-    generateGrid(gridSize);
-  } else {
-    alert('Please enter a valid grid size between 1 and 100.');
-  }
-});
 

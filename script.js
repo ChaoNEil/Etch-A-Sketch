@@ -1,7 +1,7 @@
 const gridContainer = document.querySelector('.grid-container');
 const buttons = document.querySelector(".buttons");
 
-let gridSize = 32; // Initial grid size
+let gridSize = 48; // Initial grid size
 
 // Function to generate the grid
 function generateGrid(size) {

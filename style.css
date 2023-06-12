@@ -52,10 +52,12 @@ p{
 }
 
 .buttons button{
-  margin: 0 5px;
-  margin-bottom: 7px;
-  border-radius: 9px;
+  margin: 0 6px;
+  margin-bottom: 10px;
   border-color: blue;
+  font-size: 12px;
+  font-family: 'Press Start 2P', cursive;
+  width: 10%;
 }
 
 .rgb-picker{
@@ -65,4 +67,9 @@ p{
 .colorPicker-subtext{ 
   font-size: 14px;
   margin-top: 3px;
+}
+
+button {
+	width: 3rem;
+  height: 1.8rem;
 }

@@ -14,11 +14,10 @@ body{
 }
 
 .main-title {
-  margin-top: 0;
-  position:absolute; /* for positioning the h1 tag independently from the gird*/
-  top: 40px; /* for positioning the h1 tag*/
-  left: 50%; /* for positioning the h1 tag*/
-  transform: translateX(-50%); /* for positioning the h1 tag*/
+  /*position:absolute; /* for positioning the h1 tag independently from the gird*/
+  /*top: 40px; /* for positioning the h1 tag*/
+  /*left: 50%; /* for positioning the h1 tag*/
+  /*transform: translateX(-50%); /* for positioning the h1 tag*/
   color:azure;
   font-size: 42px;
   font-family: 'Press Start 2P', cursive;

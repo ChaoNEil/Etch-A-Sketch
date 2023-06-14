@@ -81,3 +81,8 @@ button {
   background-color: skyblue;
   color: blue;
 }
+
+.buttons button:active {
+  background-color: blue;
+  color: black;
+}

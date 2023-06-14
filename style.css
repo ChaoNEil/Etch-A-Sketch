@@ -36,6 +36,7 @@ p{
   display: grid;
   grid-template-columns: repeat(16, 1fr);
   position: relative; /* for positioning the h1 tag independently from the gird*/
+  box-shadow: 10px 10px 2px lightblue; /*box shadow effect*/
 }
   
 .grid-container div {

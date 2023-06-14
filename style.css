@@ -39,7 +39,7 @@ p{
 }
   
 .grid-container div {
-  background-color: #fff;
+  background-color: lightgray;
   border: 1px solid #888;
 }
 
@@ -56,6 +56,8 @@ p{
   font-size: 12px;
   font-family: 'Press Start 2P', cursive;
   width: 10%;
+  color: white;
+  background-color: black;
 }
 
 .rgb-picker{
@@ -73,4 +75,9 @@ p{
 button {
 	width: 3rem;
   height: 1.8rem;
+}
+
+.buttons button:hover{
+  background-color: skyblue;
+  color: blue;
 }

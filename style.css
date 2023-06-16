@@ -2,10 +2,10 @@
 
 
 body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: linear-gradient(to bottom right, black 70%,blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to bottom right, black 70%,blue);
 }
 
 .container{
